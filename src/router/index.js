@@ -9,6 +9,7 @@ import Cicek from "../components/Cicek.vue"
 import Odeme from "../components/Odeme.vue"
 import Uyelik from "../components/Uyelik.vue"
 import GununFirsati from "../components/GununFirsati.vue"
+import Hediye from "../components/Hediye.vue"
 
 Vue.use(VueRouter);
 
@@ -56,6 +57,11 @@ const routes = [{
         path: "/gununfirsati",
         name: "GununFirsati",
         component: GununFirsati
+    },
+    {
+        path: "/hediye",
+        name: "Hediye",
+        component: Hediye
     }
 ];
 

@@ -11,6 +11,7 @@ import Cicek from "./components/Cicek.vue"
 import Odeme from "./components/Odeme.vue"
 import Uyelik from "./components/Uyelik.vue"
 import GununFirsati from "./components/GununFirsati.vue"
+import Hediye from "./components/Hediye.vue"
 
 Vue.use(VueRouter)
 
@@ -50,6 +51,10 @@ const router = new VueRouter({
         {
             path: "/gununfirsati",
             component: GununFirsati,
+        },
+        {
+            path: "/hediye",
+            component: Hediye,
         }
     ],
     mode: 'history'

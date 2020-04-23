@@ -338,8 +338,8 @@
                      <span class="main-menu__icon">
                      <span class=" icon-menu-bonnygift"></span>
                      </span>
-                     <span class="main-menu__text">
-                     HEDİYE                        </span>
+                     <span class="main-menu__text"><router-link to="/hediye">HEDİYE</router-link>
+                                        </span>
                      </a>
                      </span>
                      <nav class="main-menu__submenu main-submenu js-main-submenu main-menu__mega-submenu">
