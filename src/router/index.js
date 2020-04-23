@@ -8,6 +8,7 @@ import DogumGunu from "../components/DogumGunu.vue"
 import Cicek from "../components/Cicek.vue"
 import Odeme from "../components/Odeme.vue"
 import Uyelik from "../components/Uyelik.vue"
+import GununFirsati from "../components/GununFirsati.vue"
 
 Vue.use(VueRouter);
 
@@ -50,6 +51,11 @@ const routes = [{
         path: "/uyelik",
         name: "Uyelik",
         component: Uyelik
+    },
+    {
+        path: "/gununfirsati",
+        name: "GununFirsati",
+        component: GununFirsati
     }
 ];
 

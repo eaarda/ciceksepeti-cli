@@ -6,7 +6,7 @@
 
 <script>
 import homecss from './assets/css/bundle-home.css'
-import layoutcss from './assets/css/layout.css'
+import layoutcss from './assets/css/bundle-layout.css'
 import stylecss from './assets/css/style.css'
 import ordercss from './assets/css/bundle-order.css'
 import maincss from './assets/css/bundle-main.css'

@@ -3,7 +3,7 @@
     <header><ust/></header>
 
     <main class="membership">
-	<div class="container">
+	    <div class="container">
 		<h2 class="login__heading">Yeni Üyelik</h2>
 		<div class="row">
 			<div class="membership__left">
@@ -63,8 +63,8 @@
 								<div class="form-group">
 									<input data-val="true" data-val-required="The IsCustomerContractConfirmed field is required." id="IsCustomerContractConfirmed" name="IsCustomerContractConfirmed" type="checkbox" value="true">
 									<label class="required-label" for="IsCustomerContractConfirmed"><a class="js-customer-contract" href="javascript:void(0);">Üyelik Sözleşmesi
-</a>'ni ve <a class="js-customer-privacy" href="javascript:void(0);">Gizlilik Sözleşmesi
-</a>'ni okudum, onaylıyorum.<span class="form-required-icon">*</span>
+            </a>'ni ve <a class="js-customer-privacy" href="javascript:void(0);">Gizlilik Sözleşmesi
+            </a>'ni okudum, onaylıyorum.<span class="form-required-icon">*</span>
 									</label> <span class="field-validation-valid" data-valmsg-for="IsCustomerContractConfirmed" data-valmsg-replace="true"></span>
 								</div>
 								<div class="form-group text-right">
@@ -159,8 +159,8 @@
 								<div class="form-group">
 									<input data-val="true" data-val-required="The IsCustomerContractConfirmed field is required." id="IsCustomerContractConfirmedCorp" name="IsCustomerContractConfirmed" type="checkbox" value="true">
 									<label class="required-label" for="IsCustomerContractConfirmedCorp"><a class="js-customer-contract" href="javascript:void(0);">Üyelik Sözleşmesi
-</a>'ni ve <a class="js-customer-privacy" href="javascript:void(0);">Gizlilik Sözleşmesi
-</a>'ni okudum, onaylıyorum.<span class="form-required-icon">*</span>
+            </a>'ni ve <a class="js-customer-privacy" href="javascript:void(0);">Gizlilik Sözleşmesi
+        </a>'ni okudum, onaylıyorum.<span class="form-required-icon">*</span>
 									</label> <span class="field-validation-valid" data-valmsg-for="IsCustomerContractConfirmed" data-valmsg-replace="true"></span>
 								</div>
 								<div class="form-group text-right">
@@ -201,8 +201,8 @@
 				<p class="membership__bottom-text">Zaten üye misiniz?</p> <a class="membership-advantages__button--member-login btn btn-warning btn-lg" href="/uye-girisi">Üye Girişi</a>
 			</div>
 		</div>
-	</div>
-</main>
+	    </div>
+    </main>
 
     <alt/>  
 

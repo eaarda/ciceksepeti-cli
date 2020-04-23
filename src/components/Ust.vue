@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="header">
-    <a href="/gunun-firsati" style="background: #175BA4; rgb(87,0,143) 70%) !important; width: 100% !important; display: inline-block; text-align: center !important; margin:auto;" class="header-gtm-banner-link"> <img src="https://cdn03.ciceksepeti.com/slider/GFirsatlariBanner3-16.gif" width="1200" height="55" alt="ÇiçekSepeti Günün Fırsatı" style="width:100%; max-width:1200px;"> </a>
+    <a href="/gununfirsati" style="background: #175BA4; rgb(87,0,143) 70%) !important; width: 100% !important; display: inline-block; text-align: center !important; margin:auto;" class="header-gtm-banner-link"> <img src="https://cdn03.ciceksepeti.com/slider/GFirsatlariBanner3-16.gif" width="1200" height="55" alt="ÇiçekSepeti Günün Fırsatı" style="width:100%; max-width:1200px;"> </a>
     <div class="container">
       <div class="header__top js-window-menu">
          <div class="header__left-col">
