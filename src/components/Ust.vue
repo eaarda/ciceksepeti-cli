@@ -117,7 +117,7 @@
                      <span class="main-menu__icon">
                      <span class="icon-birthday"></span>
                      </span>
-                     <span class="main-menu__text"><router-link to="/dogumgunu">DOĞUM GÜNÜ</router-link>
+                     <span class="main-menu__text">DOĞUM GÜNÜ
                     </span>
                      </a>
                      </span>
@@ -210,7 +210,7 @@
                      <span class="icon-menu-flowers"></span>
                      </span>
                      <span class="main-menu__text">
-                     <span class="main-menu__text"><router-link to="/cicek">ÇİÇEK</router-link>                    </span> </span>
+                     <span class="main-menu__text">ÇİÇEK </span> </span>
                      </a>
                      </span>
                      <nav class="main-menu__submenu main-submenu js-main-submenu">
@@ -338,8 +338,7 @@
                      <span class="main-menu__icon">
                      <span class=" icon-menu-bonnygift"></span>
                      </span>
-                     <span class="main-menu__text"><router-link to="/hediye">HEDİYE</router-link>
-                                        </span>
+                     <span class="main-menu__text">HEDİYE </span>
                      </a>
                      </span>
                      <nav class="main-menu__submenu main-submenu js-main-submenu main-menu__mega-submenu">
@@ -1142,18 +1141,17 @@
                      </nav>
                   </li>
                   <li class="main-menu__item js-main-menu-item">
-                     <a href="javascript:void(0)" data-href="/butik-cicekciler" class="main-menu__link-responsive js-main-menu-link-responsive">
+                     <a href="javascript:void(0)" data-href="/tasarim" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      TASARIM ÇİÇEKLER
                      </span>
                      </a>
                      <span class="main-menu__link-container">
-                     <a class="main-menu__link js-main-menu-link " href="/butik-cicekciler">
+                     <a class="main-menu__link js-main-menu-link " href="/tasarim">
                      <span class="main-menu__icon">
                      <span class="icon-boutique"></span>
                      </span>
-                     <span class="main-menu__text">
-                     TASARIM ÇİÇEKLER                        </span>
+                     <span class="main-menu__text">TASARIM ÇİÇEKLER </span>
                      </a>
                      </span>
                      <nav class="main-menu__submenu main-submenu js-main-submenu">
@@ -1165,7 +1163,7 @@
                         </span>
                         <div class="main-submenu__inner">
                            <div class="main-submenu__col main-submenu__col--left">
-                              <p class="main-submenu__title"><a href="/butik-cicekciler" role="button">Tüm Ürünleri Gör</a></p>
+                              <p class="main-submenu__title"><a href="/tasarim" role="button">Tüm Ürünleri Gör</a></p>
                               <ul class="main-submenu__items">
                                  <li class="main-submenu__item">
                                     <a class="main-submenu__item-link" href="/dogum-gunu-butik-cicek">Doğum Günü</a>
@@ -1224,7 +1222,7 @@
                      </nav>
                   </li>
                   <li class="main-menu__item js-main-menu-item">
-                     <a href="javascript:void(0)" data-href="/bonnyfood" class="main-menu__link-responsive js-main-menu-link-responsive">
+                     <a href="javascript:void(0)" data-href="/yenilebilir" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text-responsive">
                      <span class="main-menu__text">
                      <span class="main-menu__text--name">
@@ -1237,7 +1235,7 @@
                      </span>
                      </a>
                      <span class="main-menu__link-container">
-                     <a class="main-menu__link js-main-menu-link " href="/bonnyfood">
+                     <a class="main-menu__link js-main-menu-link " href="/yenilebilir">
                      <span class="main-menu__icon">
                      <span class="icon-menu-bonnyfood"></span>
                      </span>
@@ -1268,7 +1266,7 @@
                         <div class="main-submenu__inner">
                            <div class="main-submenu__col main-submenu__col--left">
                               <p class="main-submenu__title">
-                                 <a href="/bonnyfood" role="button">Tüm Ürünleri Gör</a>
+                                 <a href="/yenilebilir" role="button">Tüm Ürünleri Gör</a>
                               </p>
                               <ul class="main-submenu__items">
                                  <li class="main-submenu__item">
@@ -1341,13 +1339,13 @@
                      </nav>
                   </li>
                   <li class="main-menu__item js-main-menu-item">
-                     <a href="javascript:void(0)" data-href="/kisiye-ozel-hediyeler" class="main-menu__link-responsive js-main-menu-link-responsive">
+                     <a href="javascript:void(0)" data-href="/ozel" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      İSME ÖZEL HEDİYE
                      </span>
                      </a>
                      <span class="main-menu__link-container">
-                     <a class="main-menu__link js-main-menu-link main-menu__link--last" href="/kisiye-ozel-hediyeler">
+                     <a class="main-menu__link js-main-menu-link main-menu__link--last" href="/ozel">
                      <span class="main-menu__icon">
                      <span class=" icon-customizable"></span>
                      </span>
@@ -1364,7 +1362,7 @@
                         </span>
                         <div class="main-submenu__inner">
                            <div class="main-submenu__col main-submenu__col--left">
-                              <p class="main-submenu__title"><a href="/kisiye-ozel-hediyeler" role="button">Tüm Ürünleri Gör</a></p>
+                              <p class="main-submenu__title"><a href="/ozel" role="button">Tüm Ürünleri Gör</a></p>
                               <ul class="main-submenu__items">
                                  <li class="main-submenu__item">
                                     <a class="main-submenu__item-link" href="/kisiye-ozel-aksesuarlar">Kişiye Özel Aksesuarlar</a>

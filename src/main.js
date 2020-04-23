@@ -12,6 +12,9 @@ import Odeme from "./components/Odeme.vue"
 import Uyelik from "./components/Uyelik.vue"
 import GununFirsati from "./components/GununFirsati.vue"
 import Hediye from "./components/Hediye.vue"
+import Ozel from "./components/Ozel.vue"
+import Tasarim from "./components/Tasarim.vue"
+import Yenilebilir from "./components/Yenilebilir.vue"
 
 Vue.use(VueRouter)
 
@@ -55,6 +58,18 @@ const router = new VueRouter({
         {
             path: "/hediye",
             component: Hediye,
+        },
+        {
+            path: "/ozel",
+            component: Ozel,
+        },
+        {
+            path: "/tasarim",
+            component: Tasarim,
+        },
+        {
+            path: "/yenilebilir",
+            component: Yenilebilir,
         }
     ],
     mode: 'history'
