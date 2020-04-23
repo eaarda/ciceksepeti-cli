@@ -7,7 +7,8 @@
 				        <a href="javascript:void(0)" class="order-back-button--header js-back-button-header"> <span class="icon-left-arrow order-back-button__icon"></span></a>
 			        </div>
 			        <div class="order-header__logo-col">
-				        <div class="site-logo-responsive"></div>
+				        <div class="site-logo-responsive">
+						</div>
 			        </div>
 		        </div>
 	        </div>
@@ -126,6 +127,7 @@
 									<select class="framed-selectbox js-selectize selectized" id="DeliveryAddressList_0__DeliveryOptionId" name="DeliveryAddressList[0].DeliveryOptionId" placeholder="Teslimat Seçenekleri" tabindex="-1" style="display: none;">
 										<option value="" selected="selected"></option>
 									</select>
+
 									<div class="selectize-control framed-selectbox js-selectize single plugin-start_typing">
 										<div class="selectize-input items not-full has-options">
 											<input type="text" autocomplete="off" tabindex="" placeholder="Teslimat Seçenekleri" style="width: 144px;">
@@ -549,9 +551,9 @@
 
 						     <div class = "section wrapper checkout-wrap checkout-cart">
                					<svg id="checkmark-svg" class="runanimation" data-name="Layer 1" viewBox="0 0 193.3 193.3"><circle class="cls-1 circle" cx="96.65" cy="96.65" r="94.15"/><polyline class="cls-1 checkmark" points="46.9 101.4 76.9 131.4 146.4 61.9"/></svg>  
-                   				<div class = "text-area">
+                   				
                     				<div class="pTxt"> Siparişiniz Alındı </div>
-            					</div>
+            					
 						     </div>
 
 					</section>
@@ -676,17 +678,17 @@ svg .cls-1 {
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-.text-area{
-  text-align:center;
-  margin-top: 150px;
-}
+
 .pTxt{
+	  text-align:center;
+  margin-top: 150px;
+	position: relative;
+	top:35px;
   font-size:40px;
   color: green;
 }
-.text-area>a{
-  font-size:35px;
-}
+
+
 .checkmark-circle {
   width: 150px;
   height: 150px;
