@@ -53,11 +53,10 @@
                                     </a>
                                  </li>
                                  <li class="users-process-list__item">
-                                    <a class="users-process-list__btn" href="/yeni-uyelik">
                                     <span class="users-process-list__icon icon-register">
                                     <span class="path1"></span><span class="path2"></span><span class="path3"></span>
                                     </span>
-                                    Üye Ol
+                                    <a class="users-process-list__btn"><router-link to="/uyelik">Üye Ol</router-link>
                                     </a>
                                  </li>
                               </ul>

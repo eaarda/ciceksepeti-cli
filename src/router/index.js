@@ -7,6 +7,7 @@ import SiparisTakip from "../components/SiparisTakip.vue"
 import DogumGunu from "../components/DogumGunu.vue"
 import Cicek from "../components/Cicek.vue"
 import Odeme from "../components/Odeme.vue"
+import Uyelik from "../components/Uyelik.vue"
 
 Vue.use(VueRouter);
 
@@ -44,6 +45,11 @@ const routes = [{
         path: "/odeme",
         name: "Odeme",
         component: Odeme
+    },
+    {
+        path: "/uyelik",
+        name: "Uyelik",
+        component: Uyelik
     }
 ];
 
