@@ -1,6 +1,7 @@
 <template>
 <div>
     <header><ust/></header>
+    <a href="#"><img alt="Yukarı Çık" class="yukarikaydir" src="../img/yc.png" style="display: block;"></a>
         <main class="custom">
             <div class="container">
                 <div class="custom__inner">
