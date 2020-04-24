@@ -19,17 +19,17 @@
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007099" name="categoryRadio" data-val="true" data-id="df" data-value="2007099" data-hide="False" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="dogum-gunu-cicekleri" data-ajaxfilter="?df=2007099,2006821" value="dogum-gunu-cicekleri">
-									<label class="filter__dropdown-label" for="filter2000266_2007099">Çiçek</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007099"><router-link to="/cicek">Çiçek</router-link></label>
 									<!--True-->
 								</li>
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007100" name="categoryRadio" data-val="true" data-id="df" data-value="2007100" data-hide="False" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="dogum-gunu-kek-kurabiye" data-ajaxfilter="?df=2007100,2006821" value="dogum-gunu-kek-kurabiye">
-									<label class="filter__dropdown-label" for="filter2000266_2007100">Yenilebilir Çiçek</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007100"><router-link to="/yenilebilir">Yenilebilir Çiçek</router-link></label>
 									<!--True-->
 								</li>
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007101" name="categoryRadio" data-val="true" data-id="df" data-value="2007101" data-hide="False" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="dogum-gunu-hediyeleri" data-ajaxfilter="?df=2007101,2006821" value="dogum-gunu-hediyeleri">
-									<label class="filter__dropdown-label" for="filter2000266_2007101">Hediye</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007101"><router-link to="/hediye">Hediye</router-link></label>
 									<!--True-->
 								</li>
 							</ul>

@@ -25,7 +25,7 @@
 								</li>
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007101" name="categoryRadio" data-val="true" data-id="df" data-value="2007101" data-hide="True" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="tum-urunler?df=2007218,2007101" data-ajaxfilter="?df=2007218,2007101" value="tum-urunler?df=2007218,2007101">
-									<label class="filter__dropdown-label" for="filter2000266_2007101">Hediye</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007101"><router-link to="/hediye">Hediye</router-link></label>
 									<!--True-->
 								</li>
 							</ul>

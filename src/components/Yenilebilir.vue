@@ -20,7 +20,7 @@
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007099" name="categoryRadio" data-val="true" data-id="df" data-value="2007099" data-hide="True" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="cicek" data-ajaxfilter="?df=2007099" value="cicek">
-									<label class="filter__dropdown-label" for="filter2000266_2007099">Çiçek</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007099"><router-link to="/çiçek">Çiçek</router-link></label>
 									<!--True-->
 								</li>
 								<li class="filter__dropdown-list checked">
@@ -30,7 +30,7 @@
 								</li>
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007101" name="categoryRadio" data-val="true" data-id="df" data-value="2007101" data-hide="True" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="hediye" data-ajaxfilter="?df=2007101" value="hediye">
-									<label class="filter__dropdown-label" for="filter2000266_2007101">Hediye</label>
+									<label class="filter__dropdown-label" for="filter2000266_2007101"><router-link to="/hediye">Hediye</router-link></label>
 									<!--True-->
 								</li>
 							</ul>
