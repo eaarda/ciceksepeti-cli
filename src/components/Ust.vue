@@ -103,10 +103,10 @@
          <span class="sticky-basket__cart-quantity sticky-basket__cart-quantity--hamburger js-hamburger-cart-quantity is-hidden"></span>
          </span>
          </a>
-         <div class="responsive-menu js-responsive-menu" v-bind:class="{'is-active': active}" > 
+         <div class="responsive-menu js-responsive-menu"  > 
             <nav class="main-menu">
                <ul class="main-menu__items">
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive=true" @mouseleave="isactive=false" v-bind:class="{'is-active':isactive}">
                      <a href="javascript:void(0)" data-href="/dogumgunu" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      DOĞUM GÜNÜ
@@ -199,7 +199,7 @@
                         </div>
                      </nav>
                   </li>
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive1=true" @mouseleave="isactive1=false" v-bind:class="{'is-active':isactive1}">
                      <a href="javascript:void(0)" data-href="/cicek" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">ÇİÇEK
                      </span>
@@ -327,7 +327,7 @@
                         </div>
                      </nav>
                   </li>
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive2=true" @mouseleave="isactive2=false" v-bind:class="{'is-active':isactive2}">
                      <a href="javascript:void(0)" data-href="/hediye" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      HEDİYE
@@ -1140,7 +1140,7 @@
                         </div>
                      </nav>
                   </li>
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive3=true" @mouseleave="isactive3=false" v-bind:class="{'is-active':isactive3}">
                      <a href="javascript:void(0)" data-href="/tasarim" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      TASARIM ÇİÇEKLER
@@ -1221,7 +1221,7 @@
                         </div>
                      </nav>
                   </li>
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive4=true" @mouseleave="isactive4=false" v-bind:class="{'is-active':isactive4}">
                      <a href="javascript:void(0)" data-href="/yenilebilir" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text-responsive">
                      <span class="main-menu__text">
@@ -1338,7 +1338,7 @@
                         </div>
                      </nav>
                   </li>
-                  <li class="main-menu__item js-main-menu-item">
+                  <li class="main-menu__item js-main-menu-item" @mouseover="isactive5=true" @mouseleave="isactive5=false" v-bind:class="{'is-active':isactive5}">
                      <a href="javascript:void(0)" data-href="/ozel" class="main-menu__link-responsive js-main-menu-link-responsive">
                      <span class="main-menu__text">
                      İSME ÖZEL HEDİYE
@@ -1526,6 +1526,12 @@ export default {
        return {
         data:"",
         active:false,
+        isactive:false,
+        isactive1:false,
+        isactive2:false,
+        isactive3:false,
+        isactive4:false,
+        isactive5:false,
         } 
     },
     computed() {

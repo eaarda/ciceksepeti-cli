@@ -13,9 +13,9 @@
 				<div class="filter navbar-nav js-filter">
 					<div class="filter__inner">
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Kategori
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                        	Kategori
+                        	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                   			 </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-list ">
 									<input id="filter2000266_2007099" name="categoryRadio" data-val="true" data-id="df" data-value="2007099" data-hide="False" class="filter__dropdown-checkbox js-apply-filter" type="radio" data-url="dogum-gunu-cicekleri" data-ajaxfilter="?df=2007099,2006821" value="dogum-gunu-cicekleri">
@@ -33,11 +33,11 @@
 									<!--True-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Ürün Grubu
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                       		 Ürün Grubu
+                        	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                   			 </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -115,11 +115,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Ürün Çeşitleri
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                        	Ürün Çeşitleri
+                        	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                  		  </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -867,11 +867,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button is-active" data-toggle="dropdown">
-                        Ne İçin
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                       		 Ne İçin
+                      	  <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                		    </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -954,11 +954,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Cinsiyet
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                       		 Cinsiyet
+                       			 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                  			  </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: none;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -1001,11 +1001,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown" style="display: none;">
-                        Kime
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                      		  Kime
+                      		  <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                  			  </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -1123,11 +1123,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Renk
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                       		 Renk
+                       		 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                   			 </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -1200,11 +1200,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                        Fiyat
-                        <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
-                    </a>
+                       		 Fiyat
+                       		 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
+                   			 </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-input-wrapper" style="display: block;"> <span class="filter__dropdown-input-icon icon-search"></span>
 									<input type="text" class="form-control filter__dropdown-input js-category-filter-input js-only-alphanumeric-characters" placeholder="Ara">
@@ -1252,11 +1252,11 @@
 									<!--False-->
 								</li>
 							</ul>
-						</div>
+							</div>
 						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
-                    Sıralama
-                    <span class="filter__icon-right-sort icon-sort  js-add-caret"></span>
-                </a>
+                   			 Sıralama
+                    			<span class="filter__icon-right-sort icon-sort  js-add-caret"></span>
+               				 </a>
 							<ul class="dropdown-menu filter__dropdown">
 								<li class="filter__dropdown-list">
 									<input class="filter__dropdown-checkbox js-sort-products" type="radio" checked="" data-url="dogum-gunu?orderby=1" data-ajaxfilter="?df=2006821&amp;orderby=1" data-id="orderby" data-value="1" id="1" name="sortRadio">
@@ -1271,7 +1271,17 @@
 									<label class="filter__dropdown-label" for="3">Ucuzdan Pahalıya</label>
 								</li>
 							</ul>
-						</div>
+							</div>
+					
+					
+					
+					
+						
+						
+						
+						
+						
+						
 						<div class="filter__item  filter__item--checkbox">
 							<input class="filter__checkbox js-apply-filter" id="check_2000271" data-ajaxfilter="?df=2006821,2007218" data-value="2007218" data-id="df" data-url="tum-urunler?df=2006821,2007218" type="checkbox">
 							<label class="filter__label" for="check_2000271">Tasarım Çiçekleri</label>
