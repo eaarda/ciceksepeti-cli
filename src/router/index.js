@@ -13,6 +13,7 @@ import Hediye from "../components/Hediye.vue"
 import Ozel from "../components/Ozel.vue"
 import Tasarim from "../components/Tasarim.vue"
 import Yenilebilir from "../components/Yenilebilir.vue"
+import Userlogin from "../components/Userlogin.vue"
 
 Vue.use(VueRouter);
 
@@ -80,6 +81,11 @@ const routes = [{
         path: "/yenilebilir",
         name: "Yenilebilir",
         component: Yenilebilir
+    },
+    {
+        path: "/userlogin",
+        name: "Userlogin",
+        component: Userlogin
     }
 ];
 

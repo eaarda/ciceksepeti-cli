@@ -198,7 +198,7 @@
 		</div>
 		<div class="row">
 			<div class="membership__bottom">
-				<p class="membership__bottom-text">Zaten üye misiniz?</p> <a class="membership-advantages__button--member-login btn btn-warning btn-lg" href="/uye-girisi">Üye Girişi</a>
+				<p class="membership__bottom-text">Zaten üye misiniz?</p> <a class="membership-advantages__button--member-login btn btn-warning btn-lg" href="/userlogin">Üye Girişi</a>
 			</div>
 		</div>
 	    </div>

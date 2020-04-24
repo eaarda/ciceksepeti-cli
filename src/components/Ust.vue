@@ -38,31 +38,32 @@
                         </a>
                      </li>
                      <li class="user-menu__item">
-                        <a class="user-menu__link user-process-toggle" href="javascript:void(0);">
-                        <span class=" user-menu__icon user-menu__icon--account icon-user">
-                        </span>
-                        <span class="user-menu__title">Üyelik</span>
-                        </a>
-                        <div class="user-process js-user-process">
-                           <div class="user-process__content">
-                              <ul class="users-process-list">
-                                 <li class="users-process-list__item">
-                                    <a class="users-process-list__btn" href="/uye-girisi">
+                <a class="user-menu__link user-process-toggle" href="javascript:void(0);">
+                    <span class=" user-menu__icon user-menu__icon--account icon-user">
+                    </span>
+                    <span class="user-menu__title">Üyelik</span>
+                </a>
+                <div class="user-process js-user-process">
+                    <div class="user-process__content">
+                        <ul class="users-process-list">
+                            <li class="users-process-list__item">
+                                <a class="users-process-list__btn" href="/userlogin">
                                     <span class="users-process-list__icon icon-login"></span>
                                     Üye Girişi
-                                    </a>
-                                 </li>
-                                 <li class="users-process-list__item">
+                                </a>
+                            </li>
+                            <li class="users-process-list__item">
+                                <a class="users-process-list__btn" href="/uyelik">
                                     <span class="users-process-list__icon icon-register">
-                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
                                     </span>
-                                    <a class="users-process-list__btn"><router-link to="/uyelik">Üye Ol</router-link>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </li>
+                                    Üye Ol
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
                      <li class="user-menu__item">
                         <a class="user-menu__link">
                         <span class="user-menu__icon user-menu__icon--cart icon-cart js-product-id-list" data-product-id-list="">
