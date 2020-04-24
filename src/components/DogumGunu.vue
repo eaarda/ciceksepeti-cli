@@ -10,7 +10,7 @@
 				<h3 class="responsive-filter__title">
         Filtrele
         </h3>
-				<div class="filter navbar-nav js-filter" >
+				<div class="filter navbar-nav js-filter" > 
 					<div class="filter__inner">
 						<div class="dropdown filter__item js-filter-item" @click='drop' v-bind:class="{'open':open}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                         	Kategori
