@@ -10,9 +10,9 @@
 				<h3 class="responsive-filter__title">
         Filtrele
         </h3>
-				<div class="filter navbar-nav js-filter">
+				<div class="filter navbar-nav js-filter" >
 					<div class="filter__inner">
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop' v-bind:class="{'open':open}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                         	Kategori
                         	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                    			 </a>
@@ -34,7 +34,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop2' v-bind:class="{'open':open2}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                        		 Ürün Grubu
                         	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                    			 </a>
@@ -116,7 +116,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop3' v-bind:class="{'open':open3}" > <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                         	Ürün Çeşitleri
                         	<span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                   		  </a>
@@ -868,7 +868,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button is-active" data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop4' v-bind:class="{'open':open4}"> <a class="dropdown-toggle btn filter__button is-active" data-toggle="dropdown">
                        		 Ne İçin
                       	  <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                 		    </a>
@@ -955,7 +955,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop5' v-bind:class="{'open':open5}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                        		 Cinsiyet
                        			 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                   			  </a>
@@ -1002,7 +1002,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown" style="display: none;">
+						<div class="dropdown filter__item js-filter-item" @click='drop6' v-bind:class="{'open':open6}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown" style="display: none;">
                       		  Kime
                       		  <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                   			  </a>
@@ -1124,7 +1124,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop7' v-bind:class="{'open':open7}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                        		 Renk
                        		 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                    			 </a>
@@ -1201,7 +1201,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop8' v-bind:class="{'open':open8}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                        		 Fiyat
                        		 <span class="filter__icon-right-arrow icon-down-arrow js-add-caret"></span>
                    			 </a>
@@ -1253,7 +1253,7 @@
 								</li>
 							</ul>
 							</div>
-						<div class="dropdown filter__item js-filter-item"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
+						<div class="dropdown filter__item js-filter-item" @click='drop9' v-bind:class="{'open':open9}"> <a class="dropdown-toggle btn filter__button " data-toggle="dropdown">
                    			 Sıralama
                     			<span class="filter__icon-right-sort icon-sort  js-add-caret"></span>
                				 </a>
@@ -1282,10 +1282,19 @@
 						
 						
 						
+						
+						
+						
+						
+						
+						
+						
+						
 						<div class="filter__item  filter__item--checkbox">
 							<input class="filter__checkbox js-apply-filter" id="check_2000271" data-ajaxfilter="?df=2006821,2007218" data-value="2007218" data-id="df" data-url="tum-urunler?df=2006821,2007218" type="checkbox">
 							<label class="filter__label" for="check_2000271">Tasarım Çiçekleri</label>
 						</div>
+						
 						<div class="filter__item  filter__item--checkbox">
 							<input class="filter__checkbox js-apply-filter" id="check_2000272" data-ajaxfilter="?df=2006821,2007217" data-value="2007217" data-id="df" data-url="tum-urunler?df=2006821,2007217" type="checkbox">
 							<label class="filter__label" for="check_2000272">Kişiye Özel</label>
@@ -4706,7 +4715,164 @@ export default {
         Alt,
     },
     data () {
-    return {};
+    return {
+		open: false,
+		open2:false,
+		open3: false,
+		open4: false,
+		open5: false,
+		open6: false,
+		open7: false,
+		open8: false,
+		open9: false,
+	};
+  },
+  methods:{
+	drop(){
+		  if(this.open==true)
+		  {
+			this.open=false;
+			}else{
+				  this.open=true;
+				  this.open2=false;
+				  this.open3=false;
+				  this.open4=false;
+				  this.open5=false;
+				  this.open6=false;
+				  this.open7=false;
+				  this.open8=false;
+				  this.open9=false;
+				}
+		},
+		drop2(){
+			if(this.open2==true)
+			{
+				this.open2=false;
+			}else{
+				this.open=false;
+				this.open2=true;
+				this.open3=false;
+				this.open4=false;
+				this.open5=false;
+				this.open6=false;
+				this.open7=false;
+				this.open8=false;
+				this.open9=false;
+			}
+		},
+		drop3(){
+		if(this.open3==true)
+		{
+			this.open3=false;
+		}else{
+			this.open=false;
+			this.open2=false;
+			this.open3=true;
+			this.open4=false;
+			this.open5=false;
+			this.open6=false;
+			this.open7=false;
+			this.open8=false;
+			this.open9=false;
+			}
+		},
+		drop4(){
+			if(this.open4==true)
+			{
+				this.open4=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=true;
+				this.open5=false;
+				this.open6=false;
+				this.open7=false;
+				this.open8=false;
+				this.open9=false;
+			}
+		},
+		drop5(){
+			if(this.open5==true)
+			{
+				this.open5=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=false;
+				this.open5=true;
+				this.open6=false;
+				this.open7=false;
+				this.open8=false;
+				this.open9=false;
+			}
+		},
+		drop6(){
+			if(this.open6==true)
+			{
+				this.open6=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=false;
+				this.open5=false;
+				this.open6=true;
+				this.open7=false;
+				this.open8=false;
+				this.open9=false;
+			}
+		},
+		drop7(){
+			if(this.open7==true)
+			{
+				this.open7=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=false;
+				this.open5=false;
+				this.open6=false;
+				this.open7=true;
+				this.open8=false;
+				this.open9=false;
+			}
+		},
+		drop8(){
+			if(this.open8==true)
+			{
+				this.open8=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=false;
+				this.open5=false;
+				this.open6=false;
+				this.open7=false;
+				this.open8=true;
+				this.open9=false;
+			}
+		},
+		drop9(){
+			if(this.open9==true)
+			{
+				this.open9=false;
+			}else{
+				this.open=false;
+				this.open2=false;
+				this.open3=false;
+				this.open4=false;
+				this.open5=false;
+				this.open6=false;
+				this.open7=false;
+				this.open8=false;
+				this.open9=true;
+			}
+		},
   }
 }
+
 </script>
