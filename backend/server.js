@@ -24,7 +24,7 @@ app.post('/login', (req, res) => {
         var userdata = JSON.parse(data)
         console.log(userdata)
         userdata.forEach(element => {
-            if (element.email == req.body.email & element.password == req.body.password) {
+            if (element.username == req.body.username & element.email == req.body.email & element.password == req.body.password) {
                 res.status(200).send("OK")
                 return;
             }
@@ -40,10 +40,11 @@ app.post("/kayit", (req, res) => {
 
         const newUser = {
             id: users.length + 1,
+            username: req.body.username,
             email: req.body.email,
             password: req.body.password
         };
-        if (req.body.email == undefined || req.body.password == undefined) {
+        if (req.body.username == undefined || req.body.email == undefined || req.body.password == undefined) {
 
             return res.status(400).send('Wrong')
         }

@@ -1,27 +1,26 @@
 [
    {
       "id": 1,
+      "username": "elif",
       "email": "ea@gmail.com",
       "password": "1234"
    },
    {
       "id": 2,
+      "username": "arda",
       "email": "ae@gmail.com",
       "password": "9876"
    },
    {
       "id": 3,
-      "email": "asdasdasdasdasdasd",
-      "password": "asdfsdfgdfgdfgdfgdfasdasdg"
+      "username": "sasfdaasdas",
+      "email": "sahjsahjjas@gmail.com",
+      "password": "123456789"
    },
    {
       "id": 4,
-      "email": "asdasdasdasdasdasdasd",
-      "password": "asdfsdfgdfgdfgdfgdfasdasdg"
-   },
-   {
-      "id": 5,
-      "email": "asdasdasdasdasasdasddasdasd",
-      "password": "asdfsdfgdfgdfgdfgdfasdasdg"
+      "username": "elif arda",
+      "email": "elfard@gmail.com",
+      "password": "x0x0x"
    }
 ]

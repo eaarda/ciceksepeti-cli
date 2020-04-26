@@ -5,13 +5,16 @@ Vue.use(Vuex);
 
 const state = {
     token: 0,
-    nluser: 0
+    username: 0
 };
 
 const mutations = {
-    loguser(state, nluser) {
-
-    }
+    changeuser(state, un) {
+        state.username = un;
+    },
+    setToken(state, token) {
+        state.token = token;
+    },
 }
 
 export default new Vuex.Store({
