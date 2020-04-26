@@ -34,5 +34,11 @@
       "username": "ardaaa",
       "email": "arda@gmail.com",
       "password": "45678"
+   },
+   {
+      "id": 7,
+      "username": "ardaa2",
+      "email": "arda2@gmail.com",
+      "password": "45678"
    }
 ]

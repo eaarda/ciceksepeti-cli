@@ -8,18 +8,10 @@
 		<div class="row">
 			<div class="membership__left">
 				<div>
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs membership__tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#bireyselUyelik" aria-controls="bireyselUyelik" role="tab" data-toggle="tab">Bireysel</a>
-						</li>
-						<li role="presentation"><a href="#kurumsalUyelik" aria-controls="kurumsalUyelik" role="tab" data-toggle="tab">Kurumsal</a>
-						</li>
-					</ul>
-					<!-- Tab panes -->
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane active" id="bireyselUyelik">
 							<form action="/Customer/RegisterIndividualUser" class="membership__form js-individual-register-form" id="newMemberFormIndividual" method="post" novalidate="novalidate">
-								<!-- Hidden values -->
+								
 								<input class="js-login-user-agent" id="UserAgent" name="UserAgent" type="hidden" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36">
 								<div class="form-group form-group__label">
 									<label for="NameIndivual">Adınız Soyadınız</label>
@@ -65,89 +57,6 @@
 									<input name="IsCustomerContractConfirmed" type="hidden" value="false">
 									</form>
 									</div>
-									<div role="tabpanel" class="tab-pane " id="kurumsalUyelik">
-										<form action="/Customer/RegisterCorporateUser" class="membership__form js-corporate-register-form" id="newMemberFormCorporate" method="post" novalidate="novalidate">
-											<!-- Hidden values -->
-											<input class="js-login-user-agent" id="UserAgent" name="UserAgent" type="hidden" value="">
-											<div class="form-group form-group__label">
-												<label for="NameCorporate">Adınız Soyadınız</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 5 ve en fazla 50 karakter uzunluğunda bir değer giriniz." data-val-length-max="50" data-val-length-min="5" data-val-required="Bu bilginin doldurulması zorunludur." id="NameCorporate" maxlength="50" name="Name" placeholder="Adınız Soyadınız" type="text" value=""> <span class="form-icon icon-user"></span>
-												<span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="EmailCorporate">E-posta</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-placeholder" data-val="true" data-val-email="Lütfen geçerli bir e-posta adresi giriniz." data-val-length="Lütfen en fazla 100 karakter uzunluğunda bir değer giriniz." data-val-length-max="100" data-val-length-min="0" data-val-maxlength="The field Email must be a string or array type with a maximum length of '100'." data-val-maxlength-max="100" data-val-required="Bu bilginin doldurulması zorunludur." id="EmailCorporate" maxlength="100" name="Email" placeholder="E-posta" type="email" value=""> <span class="form-icon icon-mail"></span>
-												<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="PasswordCorporate">Şifre</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<span class="form-group__show-type js-show-type icon-eye"></span>
-												<input class="form-control form-control--password js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 3 ve en fazla 20 karakter uzunluğunda bir değer giriniz." data-val-length-max="20" data-val-length-min="3" data-val-required="Bu bilginin doldurulması zorunludur." id="PasswordCorporate" name="Password" placeholder="Şifre" type="password" value=""> <span class="form-icon icon-lock"></span>
-												<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="CompanyName">Kurum Adı</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 10 ve en fazla 200 karakter uzunluğunda bir değer giriniz." data-val-length-max="200" data-val-length-min="10" data-val-required="Bu bilginin doldurulması zorunludur." id="CompanyName" name="CompanyName" placeholder="Kurum Adı" type="text" value=""> <span class="form-icon icon-user"></span>
-												<span class="field-validation-valid" data-valmsg-for="CompanyName" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="TaxOffice">Vergi Dairesi</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 3 ve en fazla 100 karakter uzunluğunda bir değer giriniz." data-val-length-max="100" data-val-length-min="3" data-val-regex="Lütfen geçerli bir vergi dairesi giriniz." data-val-regex-pattern="^[a-zA-ZğüşöçİĞÜŞÖÇ ]+$" data-val-required="Bu bilginin doldurulması zorunludur." id="TaxOffice" name="TaxOffice" placeholder="Vergi Dairesi" type="text" value=""> <span class="form-icon icon-user"></span>
-												<span class="field-validation-valid" data-valmsg-for="TaxOffice" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="TaxNumber">Vergi Numarası</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-only-number js-placeholder" data-val="true" data-val-length="Lütfen en az 10 ve en fazla 11 karakter uzunluğunda bir değer giriniz." data-val-length-max="11" data-val-length-min="10" data-val-required="Bu bilginin doldurulması zorunludur." id="TaxNumber" name="TaxNumber" placeholder="Vergi Numarası" type="text" value=""> <span class="form-icon icon-user"></span>
-												<span class="field-validation-valid" data-valmsg-for="TaxNumber" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="Phone">Telefon Numarası</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<input class="form-control js-only-number js-placeholder js-phone-number-validation" data-val="true" data-val-length="Lütfen en az {0} ve en fazla {1} karakter uzunluğunda bir değer giriniz." data-val-length-max="14" data-val-length-min="10" data-val-required="Bu bilginin doldurulması zorunludur." id="Phone" name="Phone" placeholder="Telefon Numarası" type="tel" value=""> <span class="form-icon icon-mobile"></span>
-												<span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
-											</div>
-											<div class="form-group form-group__label">
-												<label for="Address">Adres</label>
-											</div>
-											<div class="form-group"> <span class="form-required-icon">*</span>
-												<textarea class="form-control js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 10 ve en fazla 300 karakter uzunluğunda bir değer giriniz." data-val-length-max="300" data-val-length-min="10" data-val-required="Bu bilginin doldurulması zorunludur." id="Address" name="Address" placeholder="Adres"></textarea> <span class="form-icon icon-pin"></span>
-												<span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span>
-											</div>
-											
-										<div class="form-group ">
-										<input type="checkbox" name="IsCheckAllContact" id="IsCheckAllContactCorp" value="true">
-										<label for="IsCheckAllContactCorp">Çiçeksepeti.com tarafından tarafıma <a class="js-customer-consent-contract" href="javascript:void(0);">ticari elektronik ileti</a> gönderilmesine izin veriyorum.</label>
-										</div>
-										<div class="form-group">
-										<input data-val="true" data-val-required="The IsCustomerContractConfirmed field is required." id="IsCustomerContractConfirmedCorp" name="IsCustomerContractConfirmed" type="checkbox" value="true">
-										<label class="required-label" for="IsCustomerContractConfirmedCorp"><a class="js-customer-contract" href="javascript:void(0);">Üyelik Sözleşmesi
-										</a>'ni ve <a class="js-customer-privacy" href="javascript:void(0);">Gizlilik Sözleşmesi
-											</a>'ni okudum, onaylıyorum.<span class="form-required-icon">*</span>
-										</label> <span class="field-validation-valid" data-valmsg-for="IsCustomerContractConfirmed" data-valmsg-replace="true"></span>
-										</div>
-										<div class="form-group text-right">
-										<button type="button" class="btn btn-primary btn-lg membership__btn js-corporate-register-button">Üye Ol</button>
-										</div>
-										<div class="form-group">
-										<p class="small membership__required-field-text"> <span class="form-required-icon membership__required-icon">*</span> Yıldızlı alanların doldurulması zorunludur.</p>
-										</div>
-										<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Gl4nXrV0qNFqSI9-b9pRtiMIXKV-GIavWWsm9XH4vxx44V9goYz1CebPVducM-ZdkZEw96eZqh6-nlDcKaXeHzx11IZXg_eB2gJuN_cEOvKC_6ChFBaUK41hTBOIlh5kbxyxjkEQPrRz0IxOybjj8o">
-										<input name="IsCustomerContractConfirmed" type="hidden" value="false">
-								</form>
-						</div>
 					</div>
 				</div>
 			</div>
