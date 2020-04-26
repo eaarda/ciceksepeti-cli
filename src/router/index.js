@@ -14,6 +14,7 @@ import Ozel from "../components/Ozel.vue"
 import Tasarim from "../components/Tasarim.vue"
 import Yenilebilir from "../components/Yenilebilir.vue"
 import Userlogin from "../components/Userlogin.vue"
+import UyelikBasarili from "../components/UyelikBasarili.vue"
 
 Vue.use(VueRouter);
 
@@ -86,6 +87,11 @@ const routes = [{
         path: "/userlogin",
         name: "Userlogin",
         component: Userlogin
+    },
+    {
+        path: "/uyelikbasarili",
+        name: "UyelikBasarili",
+        component: UyelikBasarili
     }
 ];
 

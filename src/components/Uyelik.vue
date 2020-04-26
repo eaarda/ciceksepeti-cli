@@ -100,6 +100,7 @@
 import Ust from './Ust.vue'
 import Alt from './Alt.vue'
 import axios from "axios";
+import UyelikBasarili from './UyelikBasarili.vue'
 
 export default{
 	name:'Uyelik',
@@ -108,15 +109,6 @@ export default{
 		Alt,
 	},
 	methods:{
-		authuser:function(){
-			axios.post('http://localhost:5000/login',{
-                      email:"elfard@gmail.com",
-                      password:"x0x0x"
-                })
-			.then(function(resp){
-				console.log(resp)
-			})
-		},
 		uye:function(){
 			axios.post('http://localhost:5000/kayit', {
 				username: this.username,
@@ -125,15 +117,13 @@ export default{
 			})
 			.then(function(resp){
 				console.log(resp);
+				window.location.href="/uyelikbasarili"
 			})
 			.catch(function (error){
 				console.log(error);
 			})
 		}
 	},
-	mounted(){
-		this.authuser();
-	}
 }
 </script>
 

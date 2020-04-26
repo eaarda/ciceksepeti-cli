@@ -16,6 +16,7 @@ import Ozel from "./components/Ozel.vue"
 import Tasarim from "./components/Tasarim.vue"
 import Yenilebilir from "./components/Yenilebilir.vue"
 import Userlogin from "./components/Userlogin.vue"
+import UyelikBasarili from "./components/UyelikBasarili.vue"
 
 Vue.use(VueRouter)
 
@@ -75,6 +76,10 @@ const router = new VueRouter({
         {
             path: "/userlogin",
             component: Userlogin,
+        },
+        {
+            path: "/uyelikbasarili",
+            component: UyelikBasarili
         }
     ],
     mode: 'history'
@@ -84,4 +89,4 @@ new Vue({
     router,
     store,
     render: h => h(App)
-})
+}).$mount('#app')
