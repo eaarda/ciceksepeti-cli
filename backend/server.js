@@ -19,50 +19,20 @@ app.get('/login', (req, res) => {
     });
 });
 
-app.post('/login', async(req, res) => {
+app.post('/login', (req, res) => {
     fs.readFile(logindata, (err, data) => {
-        const users = JSON.parse(data);
-        console.log("Users: ", users);
-        var email = req.body.email;
-        var pass = req.body.password;
-
-        res.send(req.body);
-
-        if (!email || !pass) {
-            console.log('!!!!');
-            return res.status(500).json({
-                title: 'server error',
-                error: 'user wrong'
-            })
-        }
-        const userAccount = {
-            password: pass,
-            email: email
-        };
-
-        var check = false;
-        var user = users.filter(function(user) {
-
-            console.log("User mail: ", user.email);
-            if (user.email == email) {
-                check = true;
-                return user;
+        var userdata = JSON.parse(data)
+        console.log(userdata)
+        userdata.forEach(element => {
+            if (element.email == req.body.email & element.password == req.body.password) {
+                res.status(200).send("OK")
+                return;
             }
         });
-
-        console.log("user: ", user);
-        console.log("check: ", check);
-
-        if (check == false) {
-            console.log("!!!!");
-
-            //pop up.
-
-        };
-
+        res.send("ERROR")
     });
-});
 
+})
 app.listen(process.env.PORT || 5000, () => {
     console.log('listening on 5000')
 })
