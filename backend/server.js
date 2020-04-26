@@ -12,24 +12,27 @@ app.use(bodyParser.json());
 
 const logindata = path.join(__dirname, './data/logindata.json');
 
-app.get('/login', (req, res) => {
+/*app.get('/login', (req, res) => {
     fs.readFile(logindata, (err, data) => {
         res.setHeader('Cache-Control', 'no-cache');
         res.json(JSON.parse(data));
     });
-});
+});*/
 
 app.post('/login', (req, res) => {
     fs.readFile(logindata, (err, data) => {
+        var a = false;
         var userdata = JSON.parse(data)
         console.log(userdata)
         userdata.forEach(element => {
-            if (element.username == req.body.username & element.email == req.body.email & element.password == req.body.password) {
-                res.status(200).send("OK")
+            if (element.email == req.body.email & element.password == req.body.password) {
+                a = true
+                res.send(JSON.stringify(element))
                 return;
             }
         });
-        res.send("ERROR")
+        a == false ? res.send("ERROR") : ""
+            //res.send("ERROR")
     });
 
 });

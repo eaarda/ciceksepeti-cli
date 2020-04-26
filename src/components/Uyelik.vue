@@ -43,19 +43,7 @@
 									<input class="form-control form-control--password js-placeholder js-html-tag-replace" v-model="password" data-val="true" data-val-length="Lütfen en az 3 ve en fazla 20 karakter uzunluğunda bir değer giriniz." data-val-length-max="20" data-val-length-min="3" data-val-required="Bu bilginin doldurulması zorunludur." id="PasswordIndivual" name="Password" placeholder="Şifre" required="required" type="password" value="" aria-required="true"> <span class="form-icon icon-lock"></span>
 									<span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
 								</div>
-								<div class="form-group">
-									<div class="js-recaptcha-container-RecaptchaRegisterIndividual">
-										<div id="g-recaptcha-RecaptchaRegisterIndividual-1" class="recaptcha-inner-container js-recaptcha-inner-container" data-is-async="False">
-											<div style="width: 304px; height: 78px;">
-												<div>
-													<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeudJMUAAAAACL-rLuZ2LegkO9WUUEdTBN-dehd&amp;co=aHR0cHM6Ly93d3cuY2ljZWtzZXBldGkuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=wk6lx42JIeYmEAQSHndnyT8Q&amp;size=normal&amp;cb=bn9g8uq81ldj" width="304" height="78" role="presentation" name="a-ldaq583eh9ay" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-												</div>
-												<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-											</div>
-										</div>
-										
-									</div>
-								</div>
+								
 								<div class="form-group ">
 									<input type="checkbox" name="IsCheckAllContact" id="IsCheckAllContact" value="true">
 									<label for="IsCheckAllContact">Çiçeksepeti.com tarafından tarafıma <a class="js-customer-consent-contract" href="javascript:void(0);">ticari elektronik ileti</a> gönderilmesine izin veriyorum.</label>
@@ -138,20 +126,7 @@
 												<textarea class="form-control js-placeholder js-html-tag-replace" data-val="true" data-val-length="Lütfen en az 10 ve en fazla 300 karakter uzunluğunda bir değer giriniz." data-val-length-max="300" data-val-length-min="10" data-val-required="Bu bilginin doldurulması zorunludur." id="Address" name="Address" placeholder="Adres"></textarea> <span class="form-icon icon-pin"></span>
 												<span class="field-validation-valid" data-valmsg-for="Address" data-valmsg-replace="true"></span>
 											</div>
-											<div class="form-group">
-												<div class="js-recaptcha-container-RecaptchaRegisterCorporateUser">
-													<div id="g-recaptcha-RecaptchaRegisterCorporateUser-1" class="recaptcha-inner-container js-recaptcha-inner-container" data-is-async="False">
-														<div style="width: 304px; height: 78px;">
-															<div>
-																<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeudJMUAAAAACL-rLuZ2LegkO9WUUEdTBN-dehd&amp;co=aHR0cHM6Ly93d3cuY2ljZWtzZXBldGkuY29tOjQ0Mw..&amp;hl=en-GB&amp;v=wk6lx42JIeYmEAQSHndnyT8Q&amp;size=normal&amp;cb=oxxd1i3e079m" width="304" height="78" role="presentation" name="a-c1ssid1psjqo" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-															</div>
-															<textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-														</div>
-														<iframe style="display: none;"></iframe>
-													</div>
-												
-												</div>
-											</div>
+											
 										<div class="form-group ">
 										<input type="checkbox" name="IsCheckAllContact" id="IsCheckAllContactCorp" value="true">
 										<label for="IsCheckAllContactCorp">Çiçeksepeti.com tarafından tarafıma <a class="js-customer-consent-contract" href="javascript:void(0);">ticari elektronik ileti</a> gönderilmesine izin veriyorum.</label>
@@ -216,32 +191,41 @@
 import Ust from './Ust.vue'
 import Alt from './Alt.vue'
 import axios from "axios";
-import func from '../../vue-temp/vue-editor-bridge';
 
-export default {
-    name: 'Uyelik',
-    components:{
-        Ust,
-        Alt,
-    },
-    data () {
-	return {};
+export default{
+	name:'Uyelik',
+	components:{
+		Ust,
+		Alt,
+	},
 	methods:{
-		uye:{
-			axios.post('localhost:5000/kayit', {
+		authuser:function(){
+			axios.post('http://localhost:5000/login',{
+                      email:"elfard@gmail.com",
+                      password:"x0x0x"
+                })
+			.then(function(resp){
+				console.log(resp)
+			})
+		},
+		uye:function(){
+			axios.post('http://localhost:5000/kayit', {
 				username: this.username,
 				email: this.email,
 				password: this.password
 			})
-			.then(function (response){
-				console.log(response);
+			.then(function(resp){
+				console.log(resp);
 			})
-			.catch(function(error){
+			.catch(function (error){
 				console.log(error);
-			});
+			})
 		}
+	},
+	mounted(){
+		this.authuser();
 	}
-  }
 }
 </script>
+
 
