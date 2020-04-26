@@ -19,11 +19,15 @@ app.get('/login', (req, res) => {
     });
 });
 
-app.post('/login', (req, res) => {
+app.post('/login', async(req, res) => {
     fs.readFile(logindata, (err, data) => {
         const users = JSON.parse(data);
+        console.log("Users: ", users);
         var email = req.body.email;
         var pass = req.body.password;
+
+        res.send(req.body);
+
         if (!email || !pass) {
             console.log('!!!!');
             return res.status(500).json({
@@ -36,31 +40,26 @@ app.post('/login', (req, res) => {
             email: email
         };
 
+        var check = false;
         var user = users.filter(function(user) {
+
+            console.log("User mail: ", user.email);
             if (user.email == email) {
+                check = true;
                 return user;
             }
         });
 
-        if (!user) {
-            console.log("!!!!")
-            return status(500).json({
-                title: 'server error',
-                error: 'user wrong'
-            })
+        console.log("user: ", user);
+        console.log("check: ", check);
+
+        if (check == false) {
+            console.log("!!!!");
+
+            //pop up.
+
         };
 
-        if (user[0].password != pass) {
-            console.log("Wrong password");
-            return false;
-        } else {
-            const token = jwt.sign(userAccount);
-            console.log(token);
-            return res.status(200).json({
-                title: 'Login',
-                token: token
-            });
-        }
     });
 });
 
