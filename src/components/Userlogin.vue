@@ -70,6 +70,8 @@
 <script>
 import Ust from './Ust.vue'
 import Alt from './Alt.vue'
+import axios from "axios";
+
 export default {
     name: 'Userlogin',
     components:{
@@ -77,7 +79,7 @@ export default {
         Alt,
     },
     data () {
-    return {};
-  }
+	return {};
+}
 }
 </script>

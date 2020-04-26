@@ -32,7 +32,35 @@ app.post('/login', (req, res) => {
         res.send("ERROR")
     });
 
-})
+});
+
+app.post("/kayit", (req, res) => {
+    fs.readFile(logindata, (err, data) => {
+        const users = JSON.parse(data);
+
+        const newUser = {
+            id: users.length + 1,
+            email: req.body.email,
+            password: req.body.password
+        };
+        if (req.body.email == undefined || req.body.password == undefined) {
+
+            return res.status(400).send('Wrong')
+        }
+        for (var i = 0; i < users.length; i++) {
+            if (users[i].email == req.body.email) {
+
+                return res.json({ err: true })
+            }
+        }
+        users.push(newUser);
+        fs.writeFile(logindata, JSON.stringify(users, null, 3), () => {
+            res.setHeader('Cache-Control', 'no-cache');
+            res.send("ok")
+        });
+    });
+});
+
 app.listen(process.env.PORT || 5000, () => {
     console.log('listening on 5000')
-})
+});
