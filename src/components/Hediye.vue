@@ -7,7 +7,7 @@
 			<div class="container">
 			<div class="js-category-container">
 			<div class=" responsive-filter js-responsive-filtering "> <span class="responsive-filter__close-icon js-close-responsive-filter icon-close-line"></span>
-				<a class="responsive-filter__clear-link js-clear-filter-button" href="/tum-urunler">Temizle</a>
+				<a class="responsive-filter__clear-link js-clear-filter-button" href="dogumgunu">Temizle</a>
 				<h3 class="responsive-filter__title">
        		 Filtrele
     		</h3>
@@ -1168,7 +1168,7 @@
                 </a>
 				</li>
 				<li class="category-order__filter js-clean-filter"> <span class="is-hidden filter__ellipsis">...</span>
-					<a class="filter__clean-btn" href="/tum-urunler">Temizle</a>
+					<a class="filter__clean-btn" href="/dogumgunu">Temizle</a>
 				</li>
 				<li class="category-order__text">556762 ürün bulundu.</li>
 			</ul>

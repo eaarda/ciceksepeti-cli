@@ -79,7 +79,7 @@ export default {
                       password:this.password
                 })
 			.then(function(resp){
-				console.log(resp)
+				console.log(resp);
 				window.location.href="/"
 			})
 			.catch(function (error){

@@ -68,7 +68,7 @@
    {
       "id": 12,
       "username": "Berkay",
-      "email": "berkaybey@",
+      "email": "berkaybey@gmail.com",
       "password": "12345"
    },
    {
@@ -76,5 +76,11 @@
       "username": "Elif Arda",
       "email": "elifarda@hotmail.com",
       "password": "123456"
+   },
+   {
+      "id": 14,
+      "username": "eaea",
+      "email": "eaea@hotmail.com",
+      "password": "eaea"
    }
 ]
